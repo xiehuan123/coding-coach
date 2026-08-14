@@ -1,0 +1,25 @@
+{
+  "name": "coding-coach",
+  "owner": {
+    "name": "xiehuan123",
+    "url": "https://github.com/xiehuan123"
+  },
+  "description": "面向非开发人员的工程技能包（Matt Pocock skills 中文友好改编），可作为 Claude Code 插件安装。",
+  "plugins": [
+    {
+      "name": "coding-coach",
+      "source": "./",
+      "description": "Non-developer-friendly coding skills adapted from mattpocock/skills — clarify, plan, implement, review, teach.",
+      "category": "engineering",
+      "keywords": [
+        "engineering",
+        "skills",
+        "non-developer",
+        "tdd",
+        "code-review",
+        "grilling",
+        "chinese"
+      ]
+    }
+  ]
+}

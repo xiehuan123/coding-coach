@@ -1,0 +1,44 @@
+{
+  "name": "coding-coach",
+  "version": "1.0.0",
+  "description": "面向非开发人员的工程技能包：Matt Pocock 精选 skills 的中文友好改编（含路由技能 ask-matt）。Non-developer-friendly coding skills, adapted from mattpocock/skills.",
+  "author": {
+    "name": "xiehuan123",
+    "url": "https://github.com/xiehuan123"
+  },
+  "homepage": "https://github.com/xiehuan123/coding-coach",
+  "repository": "https://github.com/xiehuan123/coding-coach",
+  "license": "MIT",
+  "keywords": [
+    "engineering",
+    "skills",
+    "non-developer",
+    "tdd",
+    "code-review",
+    "grilling",
+    "prototype",
+    "diagnosing-bugs",
+    "teach",
+    "productivity",
+    "chinese"
+  ],
+  "skills": [
+    "./skills/ask-matt",
+    "./skills/code-review",
+    "./skills/codebase-design",
+    "./skills/diagnosing-bugs",
+    "./skills/domain-modeling",
+    "./skills/grill-me",
+    "./skills/grilling",
+    "./skills/handoff",
+    "./skills/implement",
+    "./skills/prototype",
+    "./skills/research",
+    "./skills/tdd",
+    "./skills/teach",
+    "./skills/to-questionnaire",
+    "./skills/to-spec",
+    "./skills/to-tickets",
+    "./skills/wait-what"
+  ]
+}
