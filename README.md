@@ -90,11 +90,15 @@ cp -R dsh/coding-coach ~/.dsh/.agent-presets/coding-coach
 把 35 个技能装进某个 profile 的全局技能目录，该 profile 下所有 Agent 都能用：
 
 ```bash
+# 从 npm（推荐，已发布 coding-coach@1.0.0）
+dsh plugin --profile web add coding-coach
+
+# 或从 GitHub
 dsh plugin --profile web add github:xiehuan123/coding-coach
 ```
 
-> 用 npm 包名安装也可：`dsh plugin --profile web add coding-coach`（需先发布到 npm）。
 > 安装后可用 `dsh --profile web --dump-config` 看到新增的 `skill-filesystem-coding-coach` 行。
+> npm 包：https://www.npmjs.com/package/coding-coach
 
 ### 4. 手动拷贝 skills
 
