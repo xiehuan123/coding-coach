@@ -25,6 +25,7 @@
     "chinese"
   ],
   "skills": [
+    "./skills/coach-playbook",
     "./skills/ask-matt",
     "./skills/code-review",
     "./skills/codebase-design",

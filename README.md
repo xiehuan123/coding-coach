@@ -1,13 +1,18 @@
 # Coding Coach（编程教练）
 
-面向**非开发人员**的「从想法到上线」全流程产品教练：三套技能覆盖**产品 → 界面 → 实现 → 上线**。
+面向**非开发人员**的「从想法到上线」全流程产品教练：一套**固定编排流水线** + 三套技能，覆盖**产品 → 界面 → 实现 → 上线**。
 
 > 给非开发人员的体验：不需要懂编程术语。直接说「我想做个记账小工具，帮我一步步来」，
-> AI 会先追问澄清（grill-me / product-manager），再设计界面（ui-ux-pro-max）、
-> 实现（implement + tdd）、检查（code-review）、上线（deploy-to-vercel），
-> 全程用你能听懂的话汇报，并可以随时要求它讲解（teach）或重讲（wait-what）。
+> AI 会先按 `coach-playbook` 选模式走七段流水线（澄清 → 用户路径 → 配色 → UI → 实现 → 验收 → 上线），
+> 每步产出让你确认后再继续，全程用你能听懂的话汇报，并可以随时要求它讲解（teach）或重讲（wait-what）。
 
-## 技能清单（33 个）
+## 技能清单（34 个）
+
+### 编排流水线
+
+| 技能 | 作用（大白话） |
+| --- | --- |
+| `coach-playbook` | 产品编排：从 0 到 1 的七段流水线 + 5 种模式（落地页 / 应用 / 看板 / 小程序 / 内容站） |
 
 ### 工程技能（改编自 mattpocock/skills，MIT）
 
@@ -81,7 +86,7 @@ cp -R dsh/coding-coach ~/.dsh/.agent-presets/coding-coach
 
 ### 3. DeepSeek Harness（DSH）profile 插件（bundle）
 
-把 33 个技能装进某个 profile 的全局技能目录，该 profile 下所有 Agent 都能用：
+把 34 个技能装进某个 profile 的全局技能目录，该 profile 下所有 Agent 都能用：
 
 ```bash
 dsh plugin --profile web add github:xiehuan123/coding-coach
@@ -105,7 +110,7 @@ coding-coach/
 ├── .claude-plugin/
 │   ├── plugin.json           # Claude Code 插件清单（官方格式）
 │   └── marketplace.json      # 插件市场清单
-├── skills/                   # 33 个技能（SKILL.md，供插件 / 手动安装）
+├── skills/                   # 34 个技能（SKILL.md，供插件 / 手动安装）
 └── dsh/
     └── coding-coach/         # DSH Agent 预设（agent.cordis.yml + preset.yml + skills/）
 ```
