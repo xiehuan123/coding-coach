@@ -38,7 +38,7 @@ description: 产品编排：面向非开发人员的「从 0 到 1」固定编�
 | 5️⃣ 原型验证（叠加设计） | 做一个**能点、能玩、有设计感**的一次性原型，让用户验证「对不对、好不好看」 | `prototype` + 叠加设计技能：`design-taste-frontend`（调性）+ `ui-ux-pro-max`（配色/字体/组件）+ `ui-designer`（布局/状态）+ `motion-designer`（动效） | 一个可运行/可预览的原型（HTML 或按项目约定） |
 | 6️⃣ 实现 | 真的把代码写出来：**视觉严格还原原型**（配色/动效/效果），**逻辑可重构**以符合 mattpocock 工程规范 | `implement`（内部 `tdd` 红绿循环）+ 接口/接缝用 `codebase-design`，术语沿用 `CONTEXT.md` | 可运行的产品 |
 | 7️⃣ 验收 | 逐项检查是否达标 | `code-review`（Standards + Spec 双轴，**并行子代理**）+ `web-design-guidelines` + `writing-guidelines` | 验收报告（通过/需修） |
-| 8️⃣ 上线 | 发布、拿到链接 | `deploy-to-vercel` | 可访问的链接 |
+| 8️⃣ 上线 | 发布、拿到链接；**所需账号 / Token / 域名等资源需问用户提供，技术配置由教练完成** | `deploy-to-vercel` | 可访问的链接 |
 
 > 原型段说明：简单场景（如纯静态落地页）可把原型简化为一个静态 HTML 预览；复杂或不确定的需求**必须**做可交互原型。原型要把 3️⃣ 的配色、4️⃣ 的 UI、动效都体现出来，不是丑的线框。
 >
