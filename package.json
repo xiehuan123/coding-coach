@@ -1,7 +1,7 @@
 {
   "name": "coding-coach",
   "version": "1.0.0",
-  "description": "面向非开发人员的工程技能包（DSH profile bundle + Claude Code 插件）：mattpocock/skills 中文友好改编。Non-developer-friendly coding skills.",
+  "description": "面向非开发人员的 35 个技能 bundle（DSH profile bundle，非 Agent 预设）：编排 + 工程 + 产品 + 界面/上线。dsh plugin add coding-coach 即可把技能装进任意 profile；完整「编程教练」Agent 见仓库 dsh/coding-coach 目录。",
   "license": "MIT",
   "repository": {
     "type": "git",
