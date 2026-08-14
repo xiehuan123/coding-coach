@@ -41,7 +41,7 @@ claude plugin install xiehuan123/coding-coach
 
 也可以通过 skills.sh 安装：`npx skills@latest add xiehuan123/coding-coach`
 
-### 2. DeepSeek Harness（DSH）Agent 预设
+### 2. DeepSeek Harness（DSH）Agent 预设（推荐给非开发人员）
 
 把本仓库的 `dsh/coding-coach` 目录复制到本机 DSH 预设目录：
 
@@ -52,7 +52,18 @@ cp -R dsh/coding-coach ~/.dsh/.agent-presets/coding-coach
 
 然后在新会话的 Agent 选择器中选中「编程教练」。
 
-### 3. 手动拷贝 skills
+### 3. DeepSeek Harness（DSH）profile 插件（bundle）
+
+把 17 个技能装进某个 profile 的全局技能目录，该 profile 下所有 Agent 都能用：
+
+```bash
+dsh plugin --profile web add github:xiehuan123/coding-coach
+```
+
+> 用 npm 包名安装也可：`dsh plugin --profile web add coding-coach`（需先发布到 npm）。
+> 安装后可用 `dsh --profile web --dump-config` 看到新增的 `skill-filesystem-coding-coach` 行。
+
+### 4. 手动拷贝 skills
 
 直接把 `skills/` 下的任意技能目录拷到你的 agent 技能目录（如 `~/.claude/skills/`、`~/.agents/skills/`）。
 
@@ -62,6 +73,8 @@ cp -R dsh/coding-coach ~/.dsh/.agent-presets/coding-coach
 coding-coach/
 ├── README.md                 # 本文件
 ├── LICENSE                   # MIT（含 mattpocock/skills 原始版权声明）
+├── package.json              # DSH bundle 清单（dsh.bundle.patch → cordis.patch.yml）
+├── cordis.patch.yml          # DSH bundle patch：插入独立 skill-filesystem 行
 ├── .claude-plugin/
 │   ├── plugin.json           # Claude Code 插件清单（官方格式）
 │   └── marketplace.json      # 插件市场清单

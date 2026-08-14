@@ -1,0 +1,30 @@
+# coding-coach bundle patch — the coding-coach skills, installed as a profile
+# bundle layer via `dsh plugin --profile <name> add coding-coach`.
+#
+# A patch addresses rows by id and REPLACES the whole `config` (it does not
+# merge). Rather than patching the base `skill-filesystem` row (which the
+# web-app bundle disables — in the web profile skills are owned by presets),
+# this layer INSERTS its own isolated skill provider. `includeDefaultRoots:
+# false` + a unique `providerName` make it scan only the bundled `skills/`
+# directory and never collide with the base filesystem provider, so the skills
+# join the merged catalog of any profile (web, headless, tui) it is added to.
+#
+# The `!!js` expression resolves THIS package's own directory: `baseUrl` is the
+# profile directory (not the bundle's), so the skills path is recovered by
+# resolving `coding-coach/package.json` through the profile's node_modules and
+# taking its parent. Rename the package and this string must change with it.
+
+- insert:
+    - id: skill-filesystem-coding-coach
+      name: '@deepseek-ai/dsh-skill-filesystem'
+      config:
+        providerName: coding-coach
+        includeDefaultRoots: false
+        customSkillDirs:
+          - !!js >-
+            process.getBuiltinModule('node:path').join(
+              process.getBuiltinModule('node:path').dirname(
+                process.getBuiltinModule('node:module').createRequire(baseUrl + 'package.json').resolve('coding-coach/package.json')
+              ),
+              'skills'
+            )

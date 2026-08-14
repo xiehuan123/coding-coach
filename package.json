@@ -1,0 +1,30 @@
+{
+  "name": "coding-coach",
+  "version": "1.0.0",
+  "description": "面向非开发人员的工程技能包（DSH profile bundle + Claude Code 插件）：mattpocock/skills 中文友好改编。Non-developer-friendly coding skills.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiehuan123/coding-coach.git"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "skills",
+    "agent-preset",
+    "non-developer",
+    "tdd",
+    "code-review",
+    "grilling",
+    "chinese"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "files": [
+    "cordis.patch.yml",
+    "skills/"
+  ]
+}
