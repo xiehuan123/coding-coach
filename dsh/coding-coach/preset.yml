@@ -1,2 +1,2 @@
 name: 编程教练
-description: 面向非开发人员的开发助手：用大白话描述需求，AI 帮你澄清、规划、实现、检查并讲解。内置 Matt Pocock 工程技能精选（implement / tdd / prototype / diagnosing-bugs / code-review / research / to-spec / to-tickets / domain-modeling / codebase-design / grill-me / teach / handoff 等）。
+description: 面向非开发人员的「从想法到上线」全流程产品教练：用大白话描述需求，AI 帮你澄清产品定位、设计界面、实现功能、评审并部署上线。内置三套技能——工程（mattpocock/skills 精选）、产品（product-manager 等 5 个）、界面与上线（UI/UX、文案、Vercel 部署）。

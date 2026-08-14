@@ -1,7 +1,7 @@
 {
   "name": "coding-coach",
   "version": "1.0.0",
-  "description": "面向非开发人员的工程技能包：Matt Pocock 精选 skills 的中文友好改编（含路由技能 ask-matt）。Non-developer-friendly coding skills, adapted from mattpocock/skills.",
+  "description": "面向非开发人员的「从想法到上线」技能包：工程（mattpocock/skills 精选）+ 产品（product-manager 等）+ 界面与上线（UI/UX、文案、部署）。Non-developer-friendly product-building skills.",
   "author": {
     "name": "xiehuan123",
     "url": "https://github.com/xiehuan123"
@@ -20,6 +20,8 @@
     "diagnosing-bugs",
     "teach",
     "productivity",
+    "product-manager",
+    "ui-ux",
     "chinese"
   ],
   "skills": [
@@ -39,6 +41,22 @@
     "./skills/to-questionnaire",
     "./skills/to-spec",
     "./skills/to-tickets",
-    "./skills/wait-what"
+    "./skills/wait-what",
+    "./skills/product-manager",
+    "./skills/product-feedback-synthesizer",
+    "./skills/product-sprint-prioritizer",
+    "./skills/product-trend-researcher",
+    "./skills/product-behavioral-nudge-engine",
+    "./skills/ui-ux-pro-max",
+    "./skills/web-design-guidelines",
+    "./skills/vercel-react-view-transitions",
+    "./skills/vercel-react-best-practices",
+    "./skills/writing-guidelines",
+    "./skills/deploy-to-vercel",
+    "./skills/product-designer",
+    "./skills/ui-designer",
+    "./skills/design-taste-frontend",
+    "./skills/frontend-architect",
+    "./skills/motion-designer"
   ]
 }

@@ -1,11 +1,12 @@
 # 本预设内置的技能（Skills）
 
-这些技能改编自 [mattpocock/skills](https://github.com/mattpocock/skills)
-（Copyright (c) 2026 Matt Pocock，MIT License）。
-原文为面向工程人员的英文指令；本预设保留了原始流程，仅改写 frontmatter 描述为双语，
-并新增了面向非开发人员的路由技能 `ask-matt`（原路由技能的本地化改写）。
+面向非开发人员的「从想法到上线」技能集，分三套：
 
-## 技能清单
+## 一、工程技能（改编自 mattpocock/skills，MIT License）
+
+原仓库：<https://github.com/mattpocock/skills>（Copyright (c) 2026 Matt Pocock）。
+原文为面向工程人员的英文指令；本预设保留原始流程，改写 frontmatter 描述为双语，
+并新增中文路由技能 `ask-matt`。
 
 | 技能 | 作用（大白话） |
 | --- | --- |
@@ -26,8 +27,36 @@
 | to-questionnaire | 问卷：把缺的信息变成给别人填的问卷 |
 | wait-what | 重说：用大白话重新讲一遍 |
 
-## 原始仓库
+> 本目录仅保留对非开发人员最有用的子集，删除了 `agents/`（Claude Code / Codex 配置）
+> 与面向专业工程师的进阶技能（wayfinder、triage、wizard、resolving-merge-conflicts 等）。
 
-- https://github.com/mattpocock/skills （MIT License）
-- 本目录仅保留对非开发人员最有用的子集，删除了 `agents/`（Claude Code / Codex 配置）
-  与面向专业工程师的进阶技能（wayfinder、triage、wizard、resolving-merge-conflicts 等）。
+## 二、产品技能（改编自 Codex 产品 agent）
+
+改编自本机 `~/.codex/agents/` 下的产品类 agent（product-*），保留原文内容，转为 DSH skill 格式。
+
+| 技能 | 作用（大白话） |
+| --- | --- |
+| product-manager | 产品经理：需求发现 → PRD → 路线图 → 发布的全生命周期 |
+| product-feedback-synthesizer | 反馈综合：把用户反馈分类、提炼成改进建议 |
+| product-sprint-prioritizer | 优先级排序：RICE 框架排需求优先级 |
+| product-trend-researcher | 趋势研究：判断赛道/方向值不值得做 |
+| product-behavioral-nudge-engine | 行为助推：提升激活/留存/转化 |
+
+## 三、界面、体验与上线技能
+
+- `product-designer` — 产品体验设计（用户流程、屏幕地图、转化路径）
+- `ui-designer` — 视觉 UI 设计（布局、组件、设计系统、无障碍状态）
+- `ui-ux-pro-max` — UI/UX 设计智能（风格、配色、字体、组件）
+- `design-taste-frontend` — 反模板设计品味（落地页/作品集/改版）
+- `frontend-architect` — 前端架构（组件边界、状态、路由）
+- `motion-designer` — 动效设计（微交互、转场、缓动）
+- `web-design-guidelines` — 界面规范评审（无障碍、可用性）
+- `vercel-react-view-transitions` — 页面切换/过渡动效（MIT）
+- `vercel-react-best-practices` — React 前端性能规则（MIT）
+- `writing-guidelines` — 文案/文档写作规范评审
+- `deploy-to-vercel` — 部署到 Vercel 上线
+
+> 来源：`product-designer`、`ui-designer`、`design-taste-frontend`、`frontend-architect`、
+> `motion-designer` 改编自本机 `~/.codex/skills/`；`ui-ux-pro-max`、`web-design-guidelines`、
+> `writing-guidelines`、`deploy-to-vercel`、`vercel-*` 来自全局 skills（其中 `vercel-react-*` 为 MIT）。
+> 均保留原始 author/version 元数据。用于个人 agent 无碍；公开再分发请确认各技能许可。
