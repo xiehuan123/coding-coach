@@ -31,7 +31,7 @@ description: 产品编排：面向非开发人员的「从 0 到 1」固定编�
 
 | 段 | 做什么 | 用哪些技能 | 产出 |
 | --- | --- | --- | --- |
-| 1️⃣ 澄清（带文档） | 搞清给谁用、解决什么痛点、怎样算成功；**边界条件由教练判断推荐并记入文档** | `grill-with-docs`（= `grilling` + `domain-modeling`） | 一句话价值主张 + 目标用户 + 成功标准 + `CONTEXT.md` 术语表 |
+| 1️⃣ 澄清（带文档） | **只问产品/需求问题**（给谁用、解决什么痛点、怎样算成功、风格偏好）；**技术/边界问题由教练判断推荐并落档，不问用户** | `grill-with-docs`（= `grilling` + `domain-modeling`） | 一句话价值主张 + 目标用户 + 成功标准 + `CONTEXT.md` 术语表 |
 | 2️⃣ 产品体验 & 用户路径 | 用户怎么用、有哪些界面、关键转化；**边缘情况由教练补全并写进 ADR** | `product-designer`（+ 复杂时 `product-manager`） | 用户流程图 + 屏幕清单 + 关键路径 + 边界条件清单 |
 | 3️⃣ 配色 & 调性 | 定风格方向、配色、字体 | `design-taste-frontend` + `ui-ux-pro-max` | Design Read + 配色方案 + 字体搭配 |
 | 4️⃣ UI | 界面长什么样、组件、状态 | `ui-designer`（+ 动效 `motion-designer`） | 界面草图/布局 + 组件清单 + 状态 |
