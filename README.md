@@ -6,7 +6,7 @@
 > AI 会先按 `coach-playbook` 选模式走七段流水线（澄清 → 用户路径 → 配色 → UI → 实现 → 验收 → 上线），
 > 每步产出让你确认后再继续，全程用你能听懂的话汇报，并可以随时要求它讲解（teach）或重讲（wait-what）。
 
-## 技能清单（34 个）
+## 技能清单（35 个）
 
 ### 编排流水线
 
@@ -20,6 +20,7 @@
 | --- | --- |
 | `ask-matt` | 路由：不知道该用哪个流程时先问它 |
 | `grill-me` / `grilling` | 追问澄清：把模糊想法问清楚再动手 |
+| `grill-with-docs` | 追问澄清（带文档）：边问边沉淀 CONTEXT.md / ADR，边界条件由 AI 推荐 |
 | `to-spec` | 需求转规格：对话整理成需求文档 |
 | `to-tickets` | 任务拆解：拆成可一步步完成的小任务 |
 | `implement` | 实现：按规格写代码（内部走 tdd，完成后 code-review） |
@@ -86,7 +87,7 @@ cp -R dsh/coding-coach ~/.dsh/.agent-presets/coding-coach
 
 ### 3. DeepSeek Harness（DSH）profile 插件（bundle）
 
-把 34 个技能装进某个 profile 的全局技能目录，该 profile 下所有 Agent 都能用：
+把 35 个技能装进某个 profile 的全局技能目录，该 profile 下所有 Agent 都能用：
 
 ```bash
 dsh plugin --profile web add github:xiehuan123/coding-coach
@@ -110,7 +111,7 @@ coding-coach/
 ├── .claude-plugin/
 │   ├── plugin.json           # Claude Code 插件清单（官方格式）
 │   └── marketplace.json      # 插件市场清单
-├── skills/                   # 34 个技能（SKILL.md，供插件 / 手动安装）
+├── skills/                   # 35 个技能（SKILL.md，供插件 / 手动安装）
 └── dsh/
     └── coding-coach/         # DSH Agent 预设（agent.cordis.yml + preset.yml + skills/）
 ```

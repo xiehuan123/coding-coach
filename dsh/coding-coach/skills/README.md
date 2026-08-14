@@ -16,6 +16,7 @@
 | --- | --- |
 | ask-matt | 路由：不知道该用哪个流程时先问它 |
 | grill-me / grilling | 追问澄清：把模糊想法问清楚再动手 |
+| grill-with-docs | 追问澄清（带文档）：边问边沉淀 CONTEXT.md / ADR，边界条件由 AI 推荐 |
 | to-spec | 需求转规格：对话整理成需求文档 |
 | to-tickets | 任务拆解：拆成可一步步完成的小任务 |
 | implement | 实现：按规格写代码（内部走 tdd，完成后 code-review） |
